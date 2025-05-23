@@ -9,7 +9,7 @@ source=(
   "https://github.com/ElyPrismLauncher/ElyPrismLauncher/releases/download/${pkgver}/ElyPrismLauncher-ArchLinux-x86_64-${pkgver}.pkg.tar"
 )
 
-sha256sums=('nocheck')
+sha256sums=()
 
 depends=('libc6' 'libgcc-s1' 'libstdc++6' 'openjdk-21-jre' 'libgl1-mesa-glx' 'libqt6core6' 'libqt6core5compat6' 'libqt6svg6' 'qt6-image-formats-plugins' 'libqt6networkauth6' 'libquazip1-qt6' 'zlib1g' 'hicolor-icon-theme' 'libtomlplusplus3' 'cmark')
 optdepends=('glfw: to use system GLFW libraries'
