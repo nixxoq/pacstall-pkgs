@@ -22,5 +22,5 @@ makedepends=('cmake' 'extra-cmake-modules' 'git' 'openjdk-21-jdk' 'scdoc' 'gamem
 license=('GPL-3.0-only' 'LGPL-3.0-or-later' 'LGPL-2.0-or-later' 'Apache-2.0' 'MIT')
 
 package() {
-    tar -xf "ElyPrismLauncher-ArchLinux-x86_64-${pkgver}.pkg.tar" -C "${pkgdir}"
+    cp -a "${srcdir}/usr" "${pkgdir}/"
 }
