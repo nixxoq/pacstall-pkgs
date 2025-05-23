@@ -19,7 +19,7 @@ optdepends=('glfw: to use system GLFW libraries'
             'orca: minecraft screen reader'
             'flite: minecraft voice narration')
 makedepends=('cmake' 'extra-cmake-modules' 'git' 'openjdk-21-jdk' 'scdoc' 'gamemode')
-license=('GPL-3.0-only' 'LGPL-3.0-or-later' 'LGPL-2.0-or-later' 'Apache-2.0' 'MIT' 'LicenseRef-Batch' 'OFL-1.1')
+license=('GPL-3.0-only' 'LGPL-3.0-or-later' 'LGPL-2.0-or-later' 'Apache-2.0' 'MIT')
 
 package() {
     tar -xf "ElyPrismLauncher-ArchLinux-x86_64-${pkgver}.pkg.tar" -C "${pkgdir}"
