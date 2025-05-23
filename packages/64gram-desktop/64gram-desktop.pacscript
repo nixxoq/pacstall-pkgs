@@ -7,7 +7,7 @@ depends=("desktop-file-utils" "glib2" "hicolor-icon-theme" "libdbus" "libx11" "l
 optdepends=("ttf-opensans: default Open Sans font family")
 provides=("64gram-desktop")
 maintainer=("NixxO <nixxoq@outlook.com>")
-license=("GPL3")
+license=("GPL-3.0-only")
 
 source=(
 	"io.github.tdesktop_x64.TDesktop.desktop"
