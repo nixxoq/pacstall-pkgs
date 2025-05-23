@@ -1,0 +1,9 @@
+pkgname="popcorn-time-deb"
+gives="popcorn-time"
+repology=("project: popcorntime")
+pkgver="0.5.1"
+source=("https://github.com/popcorn-official/popcorn-desktop/releases/download/v${pkgver}/Popcorn-Time-${pkgver}-amd64.deb")
+pkgdesc="A multi-platform, free software BitTorrent client that includes an integrated media player"
+sha256sums=("3167d0649255108e6a0ece401c4398bb0bf890860a25f54be46da6f3490bcd95")
+arch=('amd64')
+maintainer=("Zahrun <Zahrun@github.com>")

@@ -1,0 +1,55 @@
+ci:
+  skip: []
+
+exclude: '^.*\.(patch)$'
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+      - id: mixed-line-ending
+        args: ["--fix=lf"]
+  - repo: https://github.com/shellcheck-py/shellcheck-py
+    rev: v0.10.0.1
+    hooks:
+      - id: shellcheck
+        types: []
+        files: '^.*\.(pacscript|sh)$'
+  - repo: https://github.com/maxwinterstein/shfmt-py
+    rev: v3.11.0.2
+    hooks:
+      - id: shfmt
+        args: ["-i", "2", "-bn", "-ci", "-sr", "-s", "-w"]
+        types: []
+        exclude: |
+          (?x)^(
+            packages/emacs/emacs.pacscript|
+            packages/emacs-git/emacs-git.pacscript|
+          )$
+        files: '^.*\.(pacscript|sh)$'
+  - repo: local
+    hooks:
+      - id: update-srcinfo
+        name: update .SRCINFO data
+        language: system
+        entry: ./scripts/srcinfo.sh write
+        files: '^.*\.pacscript$'
+      - id: check-srcinfo
+        name: check for .SRCINFO
+        language: system
+        entry: ./scripts/srcinfo.sh check
+        files: '^.*\.pacscript$'
+      - id: update-pkglist
+        name: update packagelist
+        language: system
+        entry: env LC_ALL=C ./scripts/srcinfo.sh build packagelist
+      - id: update-srclist
+        name: update srclist
+        language: system
+        entry: env LC_ALL=C ./scripts/srcinfo.sh build srclist
+
+# vim:set ft=yaml ts=2 sw=2 et:

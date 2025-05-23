@@ -1,0 +1,12 @@
+pkgname="tixati-deb"
+gives="tixati"
+pkgver="3.19"
+repology=("project: tixati")
+replaces=("${gives}")
+breaks=("${gives}-bin" "${gives}-git" "${gives}-app")
+depends=("traceroute")
+source=("https://download2.tixati.com/download/${gives}_${pkgver}-1_amd64.deb")
+pkgdesc="Tixati is a peer-to-peer file sharing program that uses the popular BitTorrent protocol"
+sha256sums=("68dd8a2db7400cb85e53d0ffac2a74ab66cbb4a8d56b2a509eb043f84b883cc9")
+arch=('amd64')
+maintainer=("heyzsh <haidarzsh@gmail.com>")

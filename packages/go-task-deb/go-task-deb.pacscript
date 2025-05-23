@@ -1,0 +1,11 @@
+pkgname="go-task-deb"
+gives="task"
+pkgdesc="A task runner / simpler Make alternative written in Go"
+maintainer=("lfromanini <lfromanini@yahoo.com>")
+repology=("project: ${gives}")
+arch=("amd64" "arm64")
+pkgver="3.39.2"
+source_amd64=("https://github.com/go-task/task/releases/download/v${pkgver}/task_linux_amd64.deb")
+sha256sums_amd64=("d4ea84524cc4e0969e84f063fc99b9aba2090ec259c00a2e12d9ed1a182cf6af")
+source_arm64=("https://github.com/go-task/task/releases/download/v${pkgver}/task_linux_arm64.deb")
+sha256sums_arm64=("2a5685880d1f0130e26ad27fbb556c01073b628247f46c79e4456d925ee5e44c")

@@ -1,0 +1,10 @@
+pkgname="eddie-ui-deb"
+gives="eddie-ui"
+repology=("project: ${gives}")
+breaks=("${gives}-bin" "${gives}-git")
+replaces=("${gives}")
+pkgver="2.21.8"
+source=("https://eddie.website/repository/apt/pool/main/e/${gives}/${gives}_${pkgver}_amd64.deb")
+pkgdesc="OpenVPN/WireGuard UI with additional user-friendly features made by AirVPN"
+sha256sums=("f9e4ece5d96ff8653578cdd037339f429ec874e461f8f1de63b970ad184aad34")
+arch=('amd64')

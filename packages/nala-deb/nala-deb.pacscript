@@ -1,0 +1,9 @@
+pkgname="nala-deb"
+pkgver="0.16.0"
+gives="nala"
+breaks=("${gives}" "${gives}-git" "${gives}-bin" "${gives}-app")
+pkgdesc="Commandline frontend for the apt package manager"
+maintainer=("Blake Lee <blake@volian.org>")
+source=("http://ftp.debian.org/debian/pool/main/n/${gives}/${gives}_${pkgver}_all.deb")
+sha256sums=("19cbc5b12bdb8f2901a8f2511ea2432a2adacb7fdf3e720f0ddd03e85b6c2d4b")
+arch=('any')

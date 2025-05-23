@@ -1,0 +1,10 @@
+pkgbase = cachyos-ananicy-rules-git
+	gives = cachyos-ananicy-rules
+	pkgver = 0.0.1
+	pkgdesc = ananicy-cpp rules for CachyOS
+	url = https://github.com/CachyOS/ananicy-rules
+	arch = any
+	pacdeps = ananicy-cpp
+	source = https://github.com/CachyOS/ananicy-rules.git
+
+pkgname = cachyos-ananicy-rules-git

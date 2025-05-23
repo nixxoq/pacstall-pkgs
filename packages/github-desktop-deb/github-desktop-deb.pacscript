@@ -1,0 +1,14 @@
+pkgname="github-desktop-deb"
+gives="github-desktop"
+pkgver="3.4.13"
+arch=("amd64" "arm64" "armhf")
+source_amd64=("https://github.com/shiftkey/desktop/releases/download/release-${pkgver}-linux1/GitHubDesktop-linux-amd64-${pkgver}-linux1.deb")
+source_arm64=("https://github.com/shiftkey/desktop/releases/download/release-${pkgver}-linux1/GitHubDesktop-linux-arm64-${pkgver}-linux1.deb")
+source_armhf=("https://github.com/shiftkey/desktop/releases/download/release-${pkgver}-linux1/GitHubDesktop-linux-armhf-${pkgver}-linux1.deb")
+url="https://desktop.github.com"
+repology=("project: github-desktop" "visiblename: github-desktop" "repo: aur")
+pkgdesc="Fork of GitHub Desktop to support various Linux distributions"
+maintainer=("Elsie19 <elsie19@pm.me>" "James Ed Randson <jimedrand@disroot.org>")
+sha256sums_amd64=("8b5577761c7900cac2896b5fbc1d88f5aea48b6ce771437262be2a66ab38d987")
+sha256sums_arm64=("48de2ab44238abf00081f51a062339796c822b92abefb0ab4c7b08026bc471e5")
+sha256sums_armhf=("f33b92b673e09f9e73e975bc2365a3a22b51b72101a9aa73bce1ad6520d18d93")

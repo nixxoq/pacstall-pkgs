@@ -1,0 +1,24 @@
+pkgbase = legcord-deb
+	gives = legcord
+	pkgver = 1.1.1
+	pkgdesc = Custom client designed to enhance your Discord experience while keeping everything lightweight
+	arch = arm64
+	arch = amd64
+	depends = libgtk-3-0
+	depends = libnotify4
+	depends = libnss3
+	depends = libxss1
+	depends = libxtst6
+	depends = xdg-utils
+	depends = libatspi2.0-0
+	depends = libuuid1
+	depends = libsecret-1-0
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	maintainer = James Ed Randson <jimedrand@disroot.org>
+	repology = project: legcord
+	source_arm64 = https://github.com/Legcord/Legcord/releases/download/v1.1.1/Legcord-1.1.1-linux-arm64.deb
+	sha256sums_arm64 = cde373603f5c87cb64efd53cc7bad44676da71debe5bafbe54bad7978c784dce
+	source_amd64 = https://github.com/Legcord/Legcord/releases/download/v1.1.1/Legcord-1.1.1-linux-amd64.deb
+	sha256sums_amd64 = 1d24e750f75072f3aac1201402e8f5202de785ef47c62dfcc4cd8b027931d3bb
+
+pkgname = legcord-deb

@@ -1,0 +1,15 @@
+pkgname="libgbinder-deb"
+gives="libgbinder"
+replaces=("${gives}")
+arch=("amd64" "arm64")
+repology=("project: ${gives}")
+pkgver="1.1.25"
+pkgrel="2"
+maintainer=("James Ed Randson <jimedrand@disroot.org>")
+pacdeps=("libglibutil-deb")
+compatible=("ubuntu:noble" "ubuntu:devel" "debian:13" "debian:sid")
+pkgdesc="Binder client library"
+source_amd64=("https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/${gives}_${pkgver}_amd64.deb")
+sha256sums_amd64=("3d3c4d7075072c7dbe008db47d641b0269a8dea16247f77deb64c4ce2f920978")
+source_arm64=("https://github.com/jimed-rand/waydroid-deb-archive/releases/download/1.4.3/${gives}_${pkgver}_arm64.deb")
+sha256sums_arm64=("82a7313d4e63439a9caf0f3dfbfa1ed8ae75468b4fe23250dbbc2d9559232400")

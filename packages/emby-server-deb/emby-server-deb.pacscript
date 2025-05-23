@@ -1,0 +1,10 @@
+pkgname="emby-server-deb"
+pkgver="4.7.13.0"
+repology=("project: emby")
+gives="emby-server"
+breaks=("${gives}" "${gives}-bin" "${gives}-git")
+source=("https://github.com/MediaBrowser/Emby.Releases/releases/download/${pkgver}/${pkgname}_${pkgver}_amd64.deb")
+sha256sums=("de95964faa185782f3dc6df5f8894f02dab631fbd9aec283fb72829617b13cea")
+arch=('amd64')
+pkgdesc="Emby brings together your personal videos, music, photos, and live television"
+maintainer=("Warofzen <warofzen1@protonmail.com>")

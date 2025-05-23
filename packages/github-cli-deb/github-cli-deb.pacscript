@@ -1,0 +1,12 @@
+pkgname="github-cli-deb"
+gives="gh"
+breaks=("${gives}-bin" "${gives}-git")
+replaces=("${gives}")
+pkgver="2.72.0"
+arch=('arm64' 'amd64')
+sha256sums_arm64=("ddcf9c474ff44952cee53a8f1a2d5ade0a0a7208014ec1c4ac817cd9177ae32c")
+sha256sums_amd64=("c396a7e674e90ec86809cb5cbbbf4e12369e717e9c2f05fac938f3d09f5592e2")
+source=("https://github.com/cli/cli/releases/download/v${pkgver}/${gives}_${pkgver}_linux_${CARCH}.deb")
+pkgdesc="GitHub's official command line tool"
+repology=("project: github-cli")
+maintainer=("Oren Klopfer <oren@taumoda.com>")

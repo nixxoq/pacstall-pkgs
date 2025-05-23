@@ -1,0 +1,10 @@
+pkgname="microsoft-edge-stable-deb"
+gives="microsoft-edge-stable"
+replaces=("${gives}")
+repology=("project: microsoft-edge")
+pkgver="135.0.3179.98-1"
+source=("https://packages.microsoft.com/repos/edge/pool/main/m/${gives}/${gives}_${pkgver}_amd64.deb")
+pkgdesc="The Chromium-based web browser from Microsoft"
+sha256sums=("0291339ce51e66b2987f6e5fc76c310b9a5c54c0d05c3f70b3cdda2743f6774e")
+arch=('amd64')
+maintainer=("Oren Klopfer <oren@taumoda.com>" "James Ed Randson <jimedrand@disroot.org>")

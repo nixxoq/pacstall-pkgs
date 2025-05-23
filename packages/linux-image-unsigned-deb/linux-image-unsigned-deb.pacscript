@@ -1,0 +1,12 @@
+pkgname="linux-image-unsigned-deb"
+gives="linux-image-unsigned-6.15.0-061500rc7-generic"
+pkgver="6.15~rc7"
+buildver="6.15.0-061500rc7.202505182143"
+arch=('arm64' 'amd64')
+sha256sums_arm64=("ce8baaa8bb2ecdd3edcac1d665b02e3a2d809ceb2ed2c68f0a8d27173928ebdc")
+sha256sums_amd64=("8a963e4bf7a0ff8117d8d1ccbbd9bf1ee5a083cbe3e1723bd34cf501b855cb7d")
+source=("https://kernel.ubuntu.com/~kernel-ppa/mainline/v${pkgver/\~/-}/${CARCH}/${gives}_${buildver}_${CARCH}.deb")
+pkgdesc="Ubuntu Linux mainline kernel (Unsigned image)"
+pacdeps=("linux-headers-generic-deb" "linux-modules-deb")
+maintainer=("Oren Klopfer <oren@taumoda.com>")
+repology=("project: linux" "repo: aur" "srcname: linux-mainline" "binname: linux-mainline")

@@ -1,0 +1,9 @@
+pkgname="libicu-deb"
+pkgver="72.1"
+gives="libicu${pkgver:0:2}"
+source=("http://archive.ubuntu.com/ubuntu/pool/main/i/icu/libicu72_${pkgver}-3ubuntu2_amd64.deb")
+pkgdesc="International Components for Unicode"
+sha256sums=("ab965e1ac9665ea93978edf271183bb3332d9ae7db194d148f9b50665c10fa2c")
+arch=('amd64')
+maintainer=("Zahrun <Zahrun@github.com>")
+repology=("project: icu" "repo: debian_unstable")

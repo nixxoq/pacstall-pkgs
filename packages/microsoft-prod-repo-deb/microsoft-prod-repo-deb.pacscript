@@ -1,0 +1,9 @@
+pkgname="microsoft-prod-repo-deb"
+arch=("amd64")
+pkgver="22.04"
+source=("https://packages.microsoft.com/config/ubuntu/${pkgver}/packages-microsoft-prod.deb")
+pkgdesc="Apt repo configuration for packages.microsoft.com"
+sha256sums=("b8713c36d3e6f6b2520830180cf6b5779e48410ad5d5e1b192635b0c7359fcc6")
+maintainer=("echometerain <echometer@disroot.org>")
+gives="packages-microsoft-prod"
+breaks=("packages-microsoft-prod")

@@ -1,0 +1,16 @@
+pkgbase = papirus-icon-theme
+	gives = papirus-icon-theme
+	pkgver = 20250501
+	pkgdesc = Papirus icon theme
+	arch = all
+	depends = gtk-update-icon-cache
+	makedepends = make
+	breaks = papirus-icon-theme
+	breaks = papirus-icon-theme-git
+	maintainer = Oren Klopfer <oren@taumoda.com>
+	repology = project: papirus-icon-theme
+	repology = repo: aur
+	source = @papirus-icon-theme~20250501::https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/archive/20250501/papirus-icon-theme-20250501.tar.gz
+	sha256sums = 3831a487f813479ad3224fdbfb0c7023f23056899bc78c93737f341aa655558e
+
+pkgname = papirus-icon-theme
