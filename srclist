@@ -76,10 +76,7 @@ pkgbase = elyprismlauncher
 	license = LGPL-2.0-or-later
 	license = Apache-2.0
 	license = MIT
-	license = LicenseRef-Batch
-	license = OFL-1.1
 	maintainer = NixxO <nixxoq@outlook.com>
 	source = https://github.com/ElyPrismLauncher/ElyPrismLauncher/releases/download/9.4/ElyPrismLauncher-ArchLinux-x86_64-9.4.pkg.tar
-	sha256sums = nocheck
 
 pkgname = elyprismlauncher
